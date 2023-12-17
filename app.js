@@ -1,17 +1,18 @@
 "use strict";
 $(document).ready(function () {
 
+    $("button").click(() => {
+        let inputValue = $("input").val();
+        let numericValue = Number(inputValue);
 
-$('.btn').click(function (e) { 
-    e.preventDefault();
-    
-    let a = (a) => {
-        for (let i = 1; i <=a; i++) {
-            $(".col-md-12").append(`<h1> ${i}</h1`);
+        let a = (a) => {
+            for (let i = 0; i < numericValue; i++) {
+                let numericTodos = $("<h2>").text(numericValue);
+                $(".list").append(numericTodos);
+            }
         }
-    }
-    a($('input').val())
-});
+        $("input").val("");
+    });
 
 
 

@@ -13,12 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 235px;
-  width: 280px;
+  width: 290px;
   border-radius: 20px;
   background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(235, 187, 45) 100%);
 }
-#demo .box h3 {
-  padding-bottom: 25px;
+#demo .box .textbox h3 {
+  padding-top: 15px;
   font-size: 35px;
   font-weight: 600;
   color: white;
@@ -29,7 +29,7 @@ body {
   padding: 10px 25px;
 }
 #demo .box .inpBox {
-  margin: 0 0 15px 45px;
+  margin: 55px 0 0 10px;
 }
 #demo .box .inpBox input {
   padding: 16px 27px;

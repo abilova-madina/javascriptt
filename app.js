@@ -20,7 +20,7 @@ $(document).ready(function () {
         $("input").val("");
         
         function appendNumericTodos (value) {
-            for (let i = 0; i< vvalue; i++) {
+            for (let i = 0; i< value; i++) {
                 let numericTodos = $("<h2>").text(value);
                 $(".list").append(numericTodos) ;
             }

@@ -5,13 +5,26 @@ $(document).ready(function () {
         let inputValue = $("input").val();
         let numericValue = Number(inputValue);
 
-        let a = (a) => {
-            for (let i = 0; i < numericValue; i++) {
-                let numericTodos = $("<h2>").text(numericValue);
-                $(".list").append(numericTodos);
+        if (inputValue == "") {
+            console.log('Zəhmət olmasa boş qoymayın!');
+        } else {
+            if (!numericValue) {
+                $(".list").append($("<h2>").text(inputValue));
+            }   else{
+                if (numericValue) {
+                    appendNumericTodos(numericValue);
+                }
             }
         }
+
         $("input").val("");
+        
+        function appendNumericTodos (value) {
+            for (let i = 0; i< vvalue; i++) {
+                let numericTodos = $("<h2>").text(value);
+                $(".list").append(numericTodos) ;
+            }
+        }
     });
 
 

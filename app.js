@@ -1,31 +1,17 @@
 "use strict";
 $(document).ready(function () {
 
-    $("button").click(() => {
-        let inputValue = $("input").val();
-        let numericValue = Number(inputValue);
-
-        if (inputValue == "") {
-            console.log('Zəhmət olmasa boş qoymayın!');
-        } else {
-            if (!numericValue) {
-                $(".list").append($("<h2>").text(inputValue));
-            }   else{
-                if (numericValue) {
-                    appendNumericTodos(numericValue);
-                }
+    $('.btn').click(function (e) {
+        e.preventDefault();
+        if (!$.trim($('input').val()) == '') {
+            let a = b => {
+                for (let i = 0; i < b; i++) { $('.minibox').append(`<h2>${b}</h2>`); }
             }
+            let v = f => Number(f) ? a(f) : $('.minibox').append(`<h2>${f}</h2>`);
+            v($('input').val());
         }
-
-        $("input").val("");
-        
-        function appendNumericTodos (value) {
-            for (let i = 0; i< value; i++) {
-                let numericTodos = $("<h2>").text(value);
-                $(".list").append(numericTodos) ;
-            }
-        }
-    });
+        $('input').val('');
+    })
 
 
 

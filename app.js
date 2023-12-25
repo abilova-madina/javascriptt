@@ -10,7 +10,7 @@ $(document).ready(function () {
             let v = f => Number(f) ? a(f) : $('.textlist').append(`<h2>${f}</h2>`);
             v($('input').val());
         }
-    
+        $('input').val('');
     })
 
 

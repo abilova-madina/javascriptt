@@ -5,40 +5,31 @@ body {
 
 #demo {
   padding: 80px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #demo .box {
-  display: flex;
-  flex-direction: column;
-  height: 235px;
-  width: 290px;
   border-radius: 20px;
-  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(235, 187, 45) 100%);
+  background: #a86c46;
+  padding: 20px 25px;
 }
-#demo .box .textbox h3 {
-  padding-top: 30px;
+#demo .box h3 {
   font-size: 35px;
   font-weight: 600;
   color: white;
 }
-#demo .box .btn button {
-  border: none;
+#demo .box .btn {
+  background-color: white;
   border-radius: 20px;
   padding: 10px 25px;
 }
-#demo .box .inpBox {
-  margin: 35px 0 0 10px;
-}
-#demo .box .inpBox input {
+#demo .box input {
   padding: 16px 27px;
+  margin: 15px 0;
   border-radius: 22px;
 }
-#demo .textlist {
+#demo .minibox {
   margin-top: 25px;
 }
-#demo .textlist h2 {
+#demo .minibox h2 {
   border: 1px solid #314dc7;
   margin-top: 10px;
   border-radius: 20px;
